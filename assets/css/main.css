@@ -19,7 +19,6 @@ html, body {
 
 .container-main {
     width: 90vw;
-    margin: 0 auto;
 }
 
 .heading.main-bg{
@@ -34,8 +33,8 @@ html, body {
 }
 
 .img-bg {
-    height: 65rem;
-    width: 65rem;
+    height: 500px;
+    width: 500px;
     border-right: 2px solid #dadada;
 }
 
@@ -75,6 +74,23 @@ html, body {
     text-shadow: 0px 2px 3px #a29c9c;
 }
 
+.login-senha {
+    display: flex;
+}
+
+.icon-senha {
+    background-image: url(https://static.netshoes.com.br/vue-components/6.49.21/netshoesbr/images/5c74819e445e7803484c3244fbc4ea75.svg);
+    background-repeat: no-repeat;
+    display: block;
+    margin-right: 10px;
+    margin-left: -30px;
+    margin-top: 20px;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
 .formulario-button button {
     margin: 5px 0px;
     width: 700px;
@@ -88,6 +104,76 @@ html, body {
     color: white;
     cursor: pointer;
     transition: background 0.3s;
+}
+
+.login-social {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 55px 10px 55px;
+}
+
+.login-social-facebook button {
+    margin: 5px 0px;
+    width: 262px;
+    height: 35px;
+
+    background: #465898;
+    border: 0.1px solid #e1d1d1;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px #bcb6b6;
+
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.login-facebook {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-google {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-login-icon-facebook {
+    background-image: url(https://static.netshoes.com.br/vue-components/6.49.21/netshoesbr/images/7fe4024dd223db55ea96a8464d2dc5fc.png);
+    background-repeat: no-repeat;
+    display: block;
+    margin-right: 5px;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
+}
+
+.login-social-google button {
+    margin: 5px 0px;
+    width: 262px;
+    height: 35px;
+    flex-grow: 1;
+
+    background: white;
+    border: 0.1px solid #e1d1d1;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px #bcb6b6;
+
+    color: rgba(0, 0, 0, 0.75);
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.social-login-icon-google {
+    background-image: url(data:image/png;base64,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);
+    background-repeat: no-repeat;
+    display: block;
+    margin-right: 5px;
+    background-size: contain;
+    width: 20px;
+    height: 20px;
 }
 
 .formulario-button button:hover {
@@ -106,3 +192,90 @@ html, body {
 .formulario-input p a:visited {
     color: #7e7979;
 }
+
+.login-social-legenda {
+    margin-top: 25px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.login-social-legenda label {
+    font-size: 14px;
+    text-shadow: 0px 2px 3px #a29c9c;
+}
+
+.rodape-cadastro {
+    margin-top: 15px;
+}
+
+.rodape-info-sac {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 420px;
+}
+
+.rodape-info-sac h1 {
+    color: #280B56;
+    width: 130px;
+}
+
+.rodape-info-sac h3 {
+    color: #999999;
+    width: 130px;
+    font-weight: bold;
+}
+
+.rodape-list-info-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    color: #999999;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.rodape-list-info-links li {
+    margin: 2.5px 0;
+}
+
+.rodape-list-duvidas a {
+    display: block;
+    padding: 4px 10px;
+    border: 0 none;
+    border-radius: 3px;
+    outline: 0;
+    background: #280B56;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    height: 22px;
+}
+
+.rodape-dados-pagamentos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rodape-link-help a {
+    font-size: 11px;
+    color: #999999;
+    font-weight: bold;
+}
+
+.rodape-link-help a:hover {
+    text-decoration: none;
+}
+
+.rodape-link-help a:visited {
+    font-size: 11px;
+    color: #999999;
+    font-weight: bold;
+}
+
