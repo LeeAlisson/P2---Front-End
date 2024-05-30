@@ -77,11 +77,11 @@ body {
 }
 
 .open {
-    background-image: url(/public/img/eyeOpen.svg);
+    background-image: url(../img/eyeOpen.svg);
 }
 
 .closed {
-    background-image: url(/public/img/eyeClosed.svg);
+    background-image: url(../img/eyeClosed.svg);
 }
 
 .icon-senha {
